@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Web Sayfası</title>
+    <style>
+        /* Genel ayarlar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        /* Buton stili */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px){
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoş Geldiniz!</h1>
+        <nav>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hakkimizda">
+            <h2>Hakkımızda</h2>
+            <p>Bu sayfa basit ve modern bir HTML + CSS tasarımı örneğidir. Responsive ve minimalist bir tasarım sunar. Bölümler hover efektleri ile biraz hareket kazanır.</p>
+        </section>
+
+        <section id="hizmetler">
+            <h2>Hizmetlerimiz</h2>
+            <p>Web geliştirme, tasarım ve danışmanlık hizmetleri sunuyoruz. Amacımız sade ve etkili çözümler üretmek.</p>
+            <a href="#" class="btn">Daha Fazla</a>
+        </section>
+
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <p>Bize e-posta yoluyla ulaşabilirsiniz: <a href="mailto:info@example.com">info@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Basit Web Sayfası. Tüm hakları saklıdır.
+    </footer>
+</body>
+</html>
